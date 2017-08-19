@@ -2,14 +2,14 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>Каталог барбершопа "Бородинский"</title>
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
       <nav class="main-navigation">
         <a class="main-heder-logo" href="index.html">
-          <img src="img/logo.svg" width="111" height="24" alt="Логотип Барбершоп">
+          <img src="img\svg-barbershop\logo.svg" width="111" height="24" alt="Логотип Барбершоп">
         </a>
         <div class="main-navigation-wrapper">
           <ul class="main-menu">
@@ -20,7 +20,10 @@
             <li><a href="contacts.html">Контакты</a></li>
           </ul>
           <ul class="user-navigation">
-            <li><a class="login-link" href="login.html">Вход</a></li>
+            <label>
+              <img src="img/svg-barbershop/login.svg" width="14" height="14">
+              <li><a class="login-link" href="login.html">Вход</a></li>
+          </label>
           </ul>
         </div>
       </nav>
@@ -98,7 +101,7 @@
             </h3>
             <p>
               <a href="catalog-item.html">
-              <img src="img/goods-1.jpg" width="220" height="165" alt="Набор для путешествий «Baxter of California»">
+              <img src="img\jpg-barbershop\bbsh-catalog\goods-baxter-of-california-set-trip.jpg" width="220" height="165" alt="Набор для путешествий «Baxter of California»">
             </a>
             </p>
             <p class="catalog-item-price">
@@ -115,7 +118,7 @@
             </h3>
             <p>
               <a href="catalog-item.html">
-              <img src="img/goods-2.jpg" width="220" height="165" alt="Увлажняющий кондиционер «Baxter of California»">
+              <img src="img\jpg-barbershop\bbsh-catalog\goods-baxter-of-california-hydrating-cond.jpg" width="220" height="165" alt="Увлажняющий кондиционер «Baxter of California»">
             </a>
             </p>
             <p class="catalog-item-price">
@@ -132,7 +135,7 @@
             </h3>
             <p>
               <a href="catalog-item.html">
-              <img src="img/goods-3.jpg" width="220" height="165" alt="Гель для волос «Suavecito»">
+              <img src="img\jpg-barbershop\bbsh-catalog\goods-suavecito-hair-gel.jpg" width="220" height="165" alt="Гель для волос «Suavecito»">
             </a>
             </p>
             <p class="catalog-item-price">
@@ -149,7 +152,7 @@
             </h3>
             <p>
               <a href="catalog-item.html">
-              <img src="img/goods-4.jpg" width="220" height="165" alt="Глина для укладки волос «American Crew»">
+              <img src="img\jpg-barbershop\bbsh-catalog\goods-american-crew-clay-hair-styling.jpg" width="220" height="165" alt="Глина для укладки волос «American Crew»">
             </a>
             </p>
             <p class="catalog-item-price">
@@ -166,7 +169,7 @@
             </h3>
             <p>
               <a href="catalog-item.html">
-              <img src="img/goods-5.jpg" width="220" height="165" alt="Гель для волос «American Crew»">
+              <img src="img\jpg-barbershop\bbsh-catalog\goods-american-crew-hair-gel.jpg" width="220" height="165" alt="Гель для волос «American Crew»">
             </a>
             </p>
             <p class="catalog-item-price">
@@ -183,7 +186,7 @@
             </h3>
             <p>
               <a href="catalog-item.html">
-              <img src="img/goods-6.jpg" width="220" height="165" alt="Набор для бритья «Baxter of California»">
+              <img src="img\jpg-barbershop\bbsh-catalog\goods-baxter-of-california-set-shaving.jpg" width="220" height="165" alt="Набор для бритья «Baxter of California»">
             </a>
             </p>
             <p class="catalog-item-price">
@@ -212,9 +215,9 @@
       <div class="footer-massengers">
         <b>Давайте дружить!</b>
         <ul class="messengers">
-          <li><a class="massengers-button" href="#">ВКонтакте</a></li>
-          <li><a class="massengers-button" href="#">Фейсбук</a></li>
-          <li><a class="massengers-button" href="#">Инстаграмм</a></li>
+          <li><a class="massengers-button" href="#"><img src="img/svg-barbershop/vk.svg" width="27" height="15" alt="ВКонтакте"></a></li>
+          <li><a class="massengers-button" href="#"><img src="img/svg-barbershop/facebook.svg" width="27" height="15" alt="Фейсбук"></a></li>
+          <li><a class="massengers-button" href="#"><img src="img/svg-barbershop/instagram.svg" width="27" height="15" alt="Инстаграм"></a></li>
         </ul>
       </div>
 
@@ -229,19 +232,30 @@
       <p>Введите свой логин и пароль</p>
       <form class="login-form" action="#" method="post">
         <p>
-          <input class="login-icon-user" type="text" name="login" placeholder="Логин">
+          <label class="visually-hidden" for="user-login">Логин</label>
+          <input class="login-icon-user" type="text" name="login" id="user-login" placeholder="Логин">
         </p>
         <p>
-          <input class="login-icon-password" type="password" name="password" placeholder="Пароль">
+          <label class="visually-hidden" for="user-password">Пароль</label>
+          <input class="login-icon-password" type="password" name="password" id="user-password" placeholder="Пароль">
         </p>
         <p class="login-password-info">
+          <label>
           <input class="visually-hidden" type="checkbox" name="remember">
           Запомните меня
+        </label>
           <a class="restore" href="#">Я забыл пароль!</a>
         </p>
         <button class="button" type="submit">Войти</button>
       </form>
-      <span class="modal-close">x</span>
+      <button class="modal-close" type="button">Закрыть</button>
     </section>
+
+    <section class="modal modal-map">
+      <h2 class="visually-hidden">Как до нас добраться</h2>
+      <p>
+        <img src="img/jpg-barbershop/map.jpg" width="780" height="560" alt="Офис компании по адресу Санкт-Петербург, ул. Большая Конюшенная, д. 19/8">
+        <button class="modal-close" type="button">Закрыть</button>
+      </p>
   </body>
 </html>
