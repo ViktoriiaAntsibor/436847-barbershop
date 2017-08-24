@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>Barbershop "Borodinsky"</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
@@ -16,7 +18,7 @@
             <li><a href="info.html">Информация</a></li>
             <li><a href="news.html">Новости</a></li>
             <li><a href="price.html">Прайс-лист</a></li>
-            <li><a href="shop.html">Магазин</a></li>
+            <li><a href="catalog.html">Магазин</a></li>
             <li><a href="contacts.html">Контакты</a></li>
           </ul>
           <ul class="user-navigation">
@@ -35,23 +37,24 @@
         <h2 class="visually-hidden">Преимущества</h2>
         <ul class="preeminences-list">
           <li class="preeminences-item">
-            <p>Быстро</p>
+            <h3>Быстро</h3>
             <img src="img/png-barbershop/rhombus.png" width="30" height="29">
             <p>Мы делаем свою работу быстро! Два часа пролетят незаметно и вы - счастливый обладатель стильной стрижки-минутки</p>
           </li>
           <li class="preeminences-item">
-            <p>Круто</p>
+            <h3>Круто</h3>
             <img src="img/png-barbershop/rhombus.png" width="30" height="29">
             <p>Забудьте как вы стриглись раньше. Мы сделаем из вас звезду футбола или кино! Во всяком случае, внешне.</p>
           </li>
           <li class="preeminences-item">
-            <p>Дорого</p>
+            <h3>Дорого</h3>
             <img src="img/png-barbershop/rhombus.png" width="30" height="29">
             <p>Наши мастера - профессионалы своего дела и не могут стоить дешево. К тому же, разве цена не дает определенный статус?</p>
           </li>
         </ul>
       </section>
 
+      <div class="index-columns">
       <section class="news">
         <h3>Новости</h3>
         <ul class="news-list">
@@ -66,7 +69,6 @@
         </ul>
         <a class="button" href="news.html">Все новости</a>
       </section>
-
       <section class="gallery">
         <h3>Фотогалерея</h3>
         <figure class="gallery-content">
@@ -75,7 +77,9 @@
         <button class="button gallery-button gallery-batton-back" type="button">Назад</button>
         <button class="button galary-batton gallery-batton-next" type="button">Вперед</button>
       </section>
+    </div>
 
+    <div class="index-columns">
       <section class="Contacts">
         <h3>Контактная информация</h3>
         <p>
@@ -114,7 +118,9 @@
           </p>
           <input type="submit" value="Отправить">
         </form>
-    </main>
+      </section>
+    </div>
+  </main>
 
     <footer class="main-footer">
         <p class="footer-contacts">
@@ -124,18 +130,18 @@
           Телефон +7 812 123-45-67
         </p>
 
-      <div class="footer-massengers">
+      <div class="footer-messangers">
         <b>Давайте дружить!</b>
-        <ul class="messengers">
-          <li><a class="massengers-button" href="#"><img src="img/svg-barbershop/vk.svg" width="27" height="15" alt="ВКонтакте"></a></li>
-          <li><a class="massengers-button" href="#"><img src="img/svg-barbershop/facebook.svg" width="27" height="15" alt="Фейсбук"></a></li>
-          <li><a class="massengers-button" href="#"><img src="img/svg-barbershop/instagram.svg" width="27" height="15" alt="Инстаграм"></a></li>
+        <ul class="messangers">
+          <li><a class="button messangers-button" href="#"><img src="img/svg-barbershop/vk.svg" width="27" height="15" alt="ВКонтакте"></a></li>
+          <li><a class="button messangers-button" href="#"><img src="img/svg-barbershop/facebook.svg" width="27" height="15" alt="Фейсбук"></a></li>
+          <li><a class="button messangers-button" href="#"><img src="img/svg-barbershop/instagram.svg" width="27" height="15" alt="Инстаграм"></a></li>
         </ul>
       </div>
 
       <p class="footer-copyright">
         <b>Разработано:</b><br>
-        <a class="button-copyright" href="#">HTML Academy</a>
+        <a class="button button-copyright" href="#">HTML Academy</a>
       </p>
     </footer>
 
@@ -152,8 +158,8 @@
           <input class="login-icon-password" type="password" name="password" id="user-password" placeholder="Пароль">
         </p>
         <p class="login-password-info">
-          <label>
-          <input class="visually-hidden" type="checkbox" name="remember">
+          <label class="login-checkbox">
+            <input class="visually-hidden" type="checkbox" name="remember">
           Запомните меня
         </label>
           <a class="restore" href="#">Я забыл пароль!</a>
@@ -169,6 +175,6 @@
         <img src="img/jpg-barbershop/bbsh-index/map.jpg" width="1739" height="784" alt="Офис компании по адресу Санкт-Петербург, ул. Большая Конюшенная, д. 19/8">
         <button class="modal-close" type="button">Закрыть</button>
       </p>
-    </section>  
+    </section>
   </body>
 </html>

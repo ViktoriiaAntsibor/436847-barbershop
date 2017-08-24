@@ -1,27 +1,357 @@
+html,
 body {
-  font-family: "PT Sans Narrow Bold", "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  font-family: "PT Sans Narrow", "Arial", sans-serif;
   font-size: 14px;
-  font-weight: bold;
-  color: #000000;
+  font-weight: 700;
   line-height: 24pt;
+  color: #ffffff;
   text-transform: uppercase;
+  background-color: #000000;
+  background-image: url("img\jpg-barbershop\bbsh-index\tint.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+.inner-page {
+  color: #000000;
+  background-color: #f8f5f2;
+  background-image: url("img\jpg-barbershop\bbsh-index\background-columns.jpg");
+  background-position: 0 0;
+  background-repeat: repeat;
+}
+
+a {
+  text-decoration: none;
 }
 
 .visually-hidden {
   position: absolute;
-  	overflow: hidden;
-  	clip: rect(0 0 0 0);
-  	height: 1px;
-  	width: 1px;
-  	margin: -1px;
-  	padding: 0;
-  	border: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
 }
 
-h3 {
-  font-family: "PT Sans", "Arial", sans-serif;
+.button {
+  font: inherit;
+  text-align: center;
+  color: #ffffff;
+  vertical-align: middle;
+  text-transform: uppercase;
+  background-color: #000000;
+  border: none;
+}
+
+.button:hover,
+.button:focus,
+.batton:active {
+  background-color: #663d15;
+}
+
+/*header */
+
+.main-navigation {
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+  background-color: #000000;
+}
+
+.main-navigation-wrapper,
+.user-navigation {
+  list-style: none;
+}
+
+.main-navigation-wrapper a,
+.user-navigation a {
+  color: #ffffff;
+}
+
+.main-navigation-wrapper a:hover,
+.main-navigation-wrapper a:focus,
+.user-navigation a:hover
+.user-navigation a:focus {
+  background-color: #242424;
+}
+
+/*index */
+
+.preeminences-list {
+  list-style: none;
+}
+
+.preeminences-item {
+  text-align: center;
+}
+
+.preeminences-item h3 {
   font-size: 30px;
-  font-weight: bold;
+  line-height: 42px;
+}
+
+.index-columns {
   color: #000000;
-  line-height: 42pt;
+  background-color: #f8f5f2;
+  background-image: url("img\jpg-barbershop\bbsh-index\background-columns.jpg");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+
+.index-columns h3 {
+  font-size: 30px;
+  line-height: 42px;
+}
+
+.news-list {
+  list-style: none;
+}
+
+.news-item time {
+  text-transform: none;
+}
+
+.gallery-content {
+  background-color: #cccccc;
+  border: 7px solid #ffffff;
+}
+
+.booking-item input {
+  font: inherit;
+  background-color: transparent;
+  border: 2px solid #000000;
+}
+
+.booking-item input:focus {
+  border-color: #663d15;
+  outline: none;
+}
+
+/*Страница каталога*/
+
+.care h1 {
+  font-size: 30px;
+  line-height: 40px;
+}
+
+.breadcrumbs {
+  list-style: none;
+}
+
+.breadcrumbs a {
+  color: #000000;
+}
+
+.breadcrumbs a:hover,
+.breadcrumbs a:focus {
+  text-decoration: underline;
+}
+
+.breadcrumbs-current {
+  color: #aba9a7;
+}
+
+.filter fieldset {
+  border: none;
+}
+
+.filter legend {
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.filter ul {
+  list-style: none;
+  line-height: 18px;
+}
+
+.filter-input:hover + label,
+.filter-input:focus + label {
+  color: #663d15;
+}
+
+.filter-input:disabled + label {
+  color: #000000;
+  opacity: 0.5;
+}
+
+.catalog-list {
+  list-style: none;
+}
+
+.catalog-item {
+  background-color: #f8f8f8;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.catalog-item:hover {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+.catalog-item a {
+  color: #000000;
+}
+
+.catalog-item h3 {
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.catalog-category {
+  text-transform: none;
+}
+
+.catalog-item-price b {
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  background-color: #e5e5e5;
+}
+
+.catalog-item-price .button {
+  line-height: 20px;
+  color: #ffffff;
+}
+
+.pagination-list {
+  list-style: none;
+}
+
+.pagination-item a {
+  color: #ffffff;
+  background-color: #000000;s
+}
+
+.pagination-item a:hover,
+.pagination-item a:focus,
+.pagination-item a:active {
+  background-color: #663d15;
+}
+
+.pagination-item-current a {
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.pagination-item-current a:hover,
+.pagination-item-current a:focus
+.pagination-item-current a:active {
+  color: #000000;
+  background-color: #ffffff;
+}
+
+/*catalog-item */
+
+.photoes-good-preview {
+  list-style: none;
+}
+
+.photoes-good-full {
+  box-shadow: 0 0 20px 2px rgba(0, 0, 0, 0.2);
+}
+
+.photoes-good-preview li {
+  box-shadow: 0 0 20px 2px rgba(0, 0, 0, 0.2);
+}
+
+.goods-article {
+  text-align: right;
+  color: #aeaeae;
+}
+
+.catalog-item-price b {
+  background-color: #e5e5e5;
+  text-align: center;
+}
+
+.goods-info h3 {
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.goods-info ul {
+  list-style: none;
+}
+
+/*Footer*/
+.main-footer {
+  color: #ffffff;
+  background-color: #222222;
+  background-image: url("img\jpg-barbershop\bbsh-index\background-footer.jpg");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+
+.footer-contacts a {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.footer-contacts a:hover,
+.footer-contacts a:focus {
+  text-decoration: none;
+}
+
+.footer-messangers {
+  text-align: center;
+}
+
+.footer-messangers ul {
+  list-style: none;
+}
+
+.footer-copyright {
+  text-align: center;
+}
+
+.footer-copyright .button:hover,
+.footer-copyright .button:focus {
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.modal {
+  color: #000000;
+  background-color: #f8f5f2;
+  background-image: url("img\jpg-barbershop\bbsh-index\background-columns.jpg");
+  background-position: 0 0;
+  background-repeat: repeat;
+}
+
+.modal h2 {
+  font-size: 30px;
+  line-height: 40px;
+}
+
+.login-form input[type="text"],
+.login-form input[type="password"] {
+  font: inherit;
+  color: #000000;
+  text-transform: uppercase;
+  background-color: #f9f6f3;
+  border: 2px solid #000000;
+}
+
+.login-form input:hover,
+.login-form input:focus {
+  color: #663d15;
+}
+
+.login-checkbox:hover,
+.login-checkbox:focus {
+  color: #663d15;
+}
+
+.restore {
+  color: #000000;
+  text-decoration: underline;
+}
+
+.restore:hover,
+.restore:focus {
+  text-decoration: none;
 }
