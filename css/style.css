@@ -8,16 +8,16 @@ body {
   line-height: 24pt;
   color: #ffffff;
   text-transform: uppercase;
-  background-color: #000000;
-  background-image: url("img\jpg-barbershop\bbsh-index\tint.jpg");
+  background-image: url("img/jpg-barbershop/bbsh-index/tint.jpg");
   background-position: top center;
   background-repeat: no-repeat;
+  background-color: #000000;
 }
 
 .inner-page {
   color: #000000;
   background-color: #f8f5f2;
-  background-image: url("img\jpg-barbershop\bbsh-index\background-columns.jpg");
+  background-image: url("img/jpg-barbershop/bbsh-index/background-columns.jpg");
   background-position: 0 0;
   background-repeat: repeat;
 }
@@ -97,7 +97,7 @@ a {
 .index-columns {
   color: #000000;
   background-color: #f8f5f2;
-  background-image: url("img\jpg-barbershop\bbsh-index\background-columns.jpg");
+  background-image: url("img/jpg-barbershop/bbsh-index/background-columns.jpg");
   background-position: 0 0;
   background-repeat: no-repeat;
 }
@@ -246,15 +246,15 @@ a {
 
 /*catalog-item */
 
-.photoes-good-preview {
+.photos-good-preview {
   list-style: none;
 }
 
-.photoes-good-full {
+.photos-good-full {
   box-shadow: 0 0 20px 2px rgba(0, 0, 0, 0.2);
 }
 
-.photoes-good-preview li {
+.photos-good-preview li {
   box-shadow: 0 0 20px 2px rgba(0, 0, 0, 0.2);
 }
 
@@ -281,7 +281,7 @@ a {
 .main-footer {
   color: #ffffff;
   background-color: #222222;
-  background-image: url("img\jpg-barbershop\bbsh-index\background-footer.jpg");
+  background-image: url("img/jpg-barbershop/bbsh-index/background-footer.jpg");
   background-position: 0 0;
   background-repeat: no-repeat;
 }
@@ -317,7 +317,7 @@ a {
 .modal {
   color: #000000;
   background-color: #f8f5f2;
-  background-image: url("img\jpg-barbershop\bbsh-index\background-columns.jpg");
+  background-image: url("img/jpg-barbershop/bbsh-index/background-columns.jpg");
   background-position: 0 0;
   background-repeat: repeat;
 }
